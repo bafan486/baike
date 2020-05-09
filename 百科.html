@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <style>
+        body{
+            background-color: rgb(245,245,245);
+        }
+        #head{
+
+            
+           
+    background-color: white;
+        }
+        #p1{
+             margin-left: 120px;
+            height: 80px;
+        }
+          #p2{
+             position: absolute;
+             left: -80px;
+             top: -2px;
+            height: 56px;
+            width: 80px;
+ }  
+        #head1{
+            width: 500px;
+            height: 40px;
+            font-size: 20px;
+            position: relative;
+            top: -30px;
+            border: 2px solid #aaaaaa;
+            text-indent: 8px;
+            
+     }
+     #head2{
+         color: white;
+         width: 150px;
+         height: 48px;
+         position: relative;
+         top: -30px;
+         left: -8px;
+         font-size: 20px;
+         background-color:rgb(51,136,255);
+         border:none;
+        cursor: pointer;
+
+     }
+     #head2:hover{
+         background-color: rgb(49,126,243);
+
+     }
+     #head3{
+         color:rgb(51,136,255);
+         width: 150px;
+         height: 48px;
+         position: relative;
+         top: -30px;
+         left: -8px;
+         font-size: 20px;
+         border-color:rgb(51,136,255);
+         background-color: white;
+         cursor: pointer;
+
+     }
+     #head3:hover{
+         border-right: groove;
+         border-bottom-style:double;
+       border-bottom-color:blue;
+        border-right-color:blue;
+        color: rgb(49,126,243);
+        cursor: pointer;
+     }
+     #head4{
+         display: inline-block;
+         position: absolute;
+         top: -18px;
+         left:4px ;
+    
+     }
+     #head4:hover{
+         cursor: pointer;
+     }
+    #select{
+        background-color: rgb(69,157,245);
+        padding-top: 18px;
+        padding-bottom: 0px;
+        padding-left:100px ;
+        height: 40px;
+        font-size: 20px;
+        color: white;
+    }
+    .sp{
+     
+       padding: 14px;
+        margin-left: 80px;
+        height: 40px;
+        
+      
+    }
+    .sp:nth-child(7){
+        
+    position: relative;
+    left: 180px;
+    
+    }
+     #selectvalu{
+        background-color: rgb(46,104,162);
+         height: 160px;
+        font-size: 18px;
+        
+        color: white;
+         display: none;
+     }
+     #selectvalu ul{
+         padding:42px ;
+         display: inline-block;
+         position: relative;
+         top: -16px;
+         left: 100px;
+     }
+     #selectvalu li{
+         list-style-type: none;
+     }
+     p{
+         display: inline-block;
+         font-size: 15px;
+         text-indent: 10px;
+     }
+     .bluefont{
+         color: blue;
+     }
+     .bluefont:hover{
+         cursor: pointer;
+     }
+     .indent{text-indent: 200px;}
+     #zhankai{
+         background-color: white;
+        border: none;
+        border-left: 1px solid gray;
+         margin: 8px;
+     }
+     #menu{
+         display: none;
+         margin-left: 180px;
+     }
+     .menu1{
+         padding: 0px;
+         margin-left: 180px;
+         display: none;
+         color: blue;
+       }
+       .menu1:hover{
+           cursor: pointer;
+           border-bottom:1px solid black;
+           }
+           #zhankai{
+               margin: 0px;
+           }
+        .icon{width: 10px;
+        height: 10px;
+
+           }
+       
+       #vedio{
+           background-color: rgb(46,78,174);
+           height: 350px;
+           width: 100%;
+           padding: 0px;
+
+       }
+       #p3{
+           margin-right: 0px;
+           padding-right: 0px;
+           position: relative;
+           top: -60px;
+           left: 140px;
+       }
+       #p4{margin: 0px;
+       padding: 0px;
+       position: relative;
+       left: 896px;
+       bottom: 308px;
+       width: 160px;
+       height: 250px;
+
+       }
+       #ved1{
+           height:300px ;
+           width: 450px;
+           margin-left: 184px;
+           margin-top: 20px;
+           margin-right: 0px;
+           padding: 0px;
+       }
+        .navigation{
+            width: 140px;
+            height: 30px;
+            background-color:rgb(6,18,47);
+            color: white;
+            float: right;
+            margin-right: 450px;
+            padding: 10px;
+            position: relative;
+            top: 18px;
+            left: -7px;
+             } 
+      #vedios{
+          margin: 0px;
+         padding: 0px;
+          height: 250px;
+           border: 1px solid black;
+           background-color: rgb(6,18,47);
+           position: relative;
+           right: -900px;
+           top: -256px;
+          
+           
+       }
+       
+       #vedios ul{
+           display: none;
+           padding: 20px;
+           margin-left: 0px;
+           padding-top: 0px;
+       }
+        #vedios #selectedList{
+           display: block;
+           padding: 20px;
+           margin-left: 0px;
+           padding-top: 0px;
+       }
+       .select{
+           color: white;
+       }
+       .select:hover{
+           cursor: pointer;
+
+       }
+       #selectedSpan{
+           color: gray;
+       }
+       .bluebt{
+           background-color:rgb(245,245,245) ;
+           border: 1px solid gray;
+           border-radius: 10%;
+       }
+       .bluebt:hover{
+           background-color: rgb(82,163,245);
+       }
+       .scrodiv{
+           display: inline-block;
+           
+       }
+       .scrodiv::-webkit-scrollbar{
+           background-color: white;
+           height: 8px;
+           
+       }
+         .scrodiv::-webkit-scrollbar-thumb {
+           background-color:rgb(145, 178, 240);
+           height: 6px;
+         
+       } 
+     
+     .p5{
+         border-radius: 50%;
+     }
+  
+    </style>
+   <!-- 搜索框  -->
+  <div id="head">
+      <img id="p1" src="image/baidu.png" alt="error" title="到百科首页">
+      <input id="head1" type="text" value="五月天">
+      <input id="head2" type="button" value="进入词条" >
+      <input id="head3" type="button" value="全站搜索" >
+    <u id="head4">帮助</u>
+</div>
+<!-- 展开栏 -->
+<div id="select">
+    <span class="sp">首页</span>
+    <span class="sp">分类</span>
+    <span class="sp">秒懂百科</span>
+    <span class="sp">特色百科</span>
+    <span class="sp">用户</span>
+    <span class="sp">权威合作</span>
+
+    <span class="sp"  ><img  id="p2" src="image/个人.png" alt="">个人中心</span>
+</div>
+
+<div id="selectvalu">
+    <ul class="u1"><li>历史上的今天</li>
+    <li>百科冷知识</li>
+    <li>图解百科</li></ul>
+
+    <ul class="u1"><li>艺术 &nbsp;  科学</li>
+        <li>自然&nbsp;文化</li>
+        <li>地理&nbsp;生活</li></ul>
+
+    <ul class="u1"><li>懂啦</li>
+         <li>秒懂本尊答</li>
+         <li>秒懂大师说</li></ul>
+
+     <ul class="u1"><li>数字博物馆</li>
+         <li>非遗百科</li>
+         <li>博物百科</li></ul>
+
+    <ul class="u1"><li>蝌蚪团</li>
+         <li>燃梦计划</li>
+         <li>分类达人</li></ul>
+
+     <ul class="u1"><li>合作模式</li>
+            <li>常见问题</li>
+            <li>联系方式</li></ul>
+</div>
+<p class="indent">五月天是一个</p><p class="bluefont">多义词，</p><p>请在下列</p><p class="bluefont">义项</p><p>上选择浏览</p>
+<input id="zhankai" type="button" value="展开"><img class="icon"  src="image/展 开.png" alt=""> <p>&nbsp;添加义项</p>
+<br>
+<ul id="menu" >
+   <li class="menva">中国台湾摇滚乐团</li>
+   </ul>
+<ul class="menu1">
+    <li class="menva">S.H.E演唱歌曲</li>
+</ul>
+<ul class="menu1">
+    <li class="menva">赵晓攀律师原创新诗</li>
+</ul>
+<!-- 视频框 -->
+<div id="vedio">
+    <img id="p3"  src="image/miaodong.png" alt="">
+    <iframe  id="ved1"   src='https://player.youku.com/embed/XNDY2MDkzOTgzMg==' frameborder=0 'allowfullscreen'></iframe>
+<!-- 侧边视频框 -->
+<div class="navigation" style="display: inline-block; ">
+    <span  class="select" id="selectedSpan">相关视频</span>
+    <span class="select">推荐视频</span>
+</div>
+<div id="vedios"   style="display: inline-block; overflow-y:scroll">
+    <ul class="selectu" id="selectedList" >
+   <li style="list-style: none;  "> <iframe height=80 width=100 src='https://player.youku.com/embed/XNDY1OTQxNDEzMg==' frameborder=0 'allowfullscreen'></iframe></li>
+    <li style="list-style: none;"><iframe height=80 width=100 src='https://player.youku.com/embed/XMzQ1OTgwNzQ5Ng==' frameborder=0 'allowfullscreen'></iframe></li>
+    <li style="list-style: none;"> <iframe height=80 width=100 src='https://player.youku.com/embed/XNDAwMDAxMjYxMg==' frameborder=0 'allowfullscreen'></iframe></li>
+</ul>
+<ul class="selectu">
+    <li style="list-style: none;"><iframe height=80 width=100 src='https://player.youku.com/embed/XODkzNDI3ODc2' frameborder=0 'allowfullscreen'></iframe></li>
+    <li style="list-style: none;"><iframe height=80 width=100 src='https://player.youku.com/embed/XNDQ5NzAzMzU4OA==' frameborder=0 'allowfullscreen'></iframe></li>
+    <li style="list-style: none;"><iframe height=80 width=100 src='https://player.youku.com/embed/XMzkxMzMzNzA2MA==' frameborder=0 'allowfullscreen'></iframe></li>
+</ul>
+</div>
+<img id="p4" src="image/yikan.png" alt="">
+</div>
+<!-- 文字框 -->
+<div id="words" style="background-color: rgb(255,255,255); margin: 20px; line-height: 10px; ">
+    <br>
+    <br>
+    <titlt style=" font-size: 40px; margin:30px;  margin-bottom: 20px;">五月天</title>
+        <input class="bluebt" type="button" value="编辑">
+        <input  class="bluebt" type="button" value="讨论">
+        <input class="bluebt" type="button" value="上传视频">
+        <br>
+        <img src="image/合照.jpg" alt="" style="width: 300px;height: 200px; float: right; margin-top: 0px; margin-right: 30px;">
+       <br>
+        <p style="background-color: rgb(238,247,253); border-left: 3px solid blue; font-size: 20px; margin-left: 30px;margin-top: 10px;margin-bottom: 20px;">
+            中国台湾台北&nbsp;中国</p>
+            <br>
+            <p style="font-size: 15px; text-indent: 40px;">五月天（Mayday），中国台湾摇滚乐团，由</p><p class="bluefont">温尚翊</p><p>（怪兽）、</p> <p class="bluefont" >陈信宏</p><p>（阿信）、</p><p class="bluefont">石锦航</p><p>（石头）、</p><p class="bluefont">蔡升晏</p><p>（玛莎）、</p><p class="bluefont">刘谚明</p><p>（冠佑）五位成员组成。</p>
+            <p style="text-indent: 40px;">乐团前身为“So Band”乐团，在1997年3月29日更名为“五月天”。</p>
+            <br>
+            <p style="text-indent: 40px;">截至2019年，发行了</p><p class="bluefont">《第一张创作专辑》 [1]  《爱情万岁》《人生海海》《神的孩子都在跳舞》《后青春期的诗》《第二人生》《自传》</p><p>等九张专辑 [2]  ，创作并演唱了</p> <p class="bluefont">《疯狂世界》《志明与春娇》《温柔》《倔强》《知足》《你不是真正的快乐》《突然好想你》</p><p>等百余首歌曲 [2]  ，举办了“你要去哪里”、“天空之城”、“离开地球表面”、“诺亚方舟”、“人生无限公司”等多次巡回演唱会，曾为</p><p class="bluefont">《摇滚本事》《盛夏光年》《星空》《步步惊情》《你的名字》</p><p>等多部影视作品创作音乐 [3]  ，四次获得台湾金曲奖“最佳乐团奖” [4]  。乐团成员也积极为其他歌手创作歌曲，并参与歌曲的编曲、演奏、和声等幕后制作。</p>
+            
+            <br><p style="text-indent: 100px; font-size: 20px;" >代表作品</p>     <p style="text-indent: 220px; font-size: 20px; margin-left: 100px;" >明星关系</p>
+              <br>           
+            <div class="scrodiv" style=" width: 300px;height: 100px;  margin-left: 100px; margin-bottom: 30px; white-space: nowrap; overflow-x:scroll; overflow-y: hidden; " >
+                <img  style="display: inline-block;" width="100px" height="100px" src="image/志明.png" alt="">
+                <img style="display: inline-block;"  width="100px" height="100px" src="image/拥抱.jpg" alt="">
+                <img style="display: inline-block;"  width="100px" height="100px" src="image/抱抱.jpg" alt="">
+                <img style="display: inline-block;"  width="100px" height="100px" src="image/温柔.jpg" alt="">
+            </div>
+            <div class="scrodiv" style=" width: 300px;height: 100px;  margin-left: 100px; margin-bottom: 30px; white-space: nowrap; overflow-x:scroll; overflow-y: hidden; " >
+                <img class="p5" style="display: inline-block;" width="90px" height="100px" src="image/glay.jpg" alt="">
+                <img class="p5" style="display: inline-block;"  width="90px" height="100px" src="image/刘.jpg" alt="">
+                <img class="p5" style="display: inline-block;"  width="90px" height="100px" src="image/阿翔.jpg" alt="">
+                <img class="p5" style="display: inline-block;"  width="90px" height="100px" src="image/李.jpg" alt="">
+            </div>
+
+</div>
+<!-- 文字框2 -->
+<div style="background-color: rgb(255,255,255); margin: 20px;padding-right: 100px;  ">
+    <table style="border-top: 1px solid  gray; border-bottom: 1px solid  gray; width: 60%; margin-left:100px ; ">
+        
+        <tr>
+            <td style="border-right:1px solid  gray ;  background-color: rgb(251,251,251); text-indent: 20px; font-size: 28px;">目录</td>
+            <td style="border-right:1px solid  gray ; line-height: 26px;">
+                 <a href="#t1">1&nbsp早年经历</a>
+                <br>
+                <a href="#t2">2&nbsp演艺经历</a>
+                <br>
+                <a href="#t3">3&nbsp主要作品</a>
+            </td>
+        <td style="border-right:1px solid  gray ;">
+            <ul>
+                <li>音乐作品</li>
+                <li>参演电影</li>
+                <li>演唱会记录</li>
+                <li>杂志写真</li>
+                
+            </ul>
+        </td>
+        <td style="line-height: 6px;">
+            <p class="bluefont" >4&nbsp获奖记录</p>
+            <br>
+                <p class="bluefont" >5&nbsp社会活动</p>
+                <br>
+                    <p class="bluefont" >6&nbsp外界评价</p>
+        </td>
+    </table>
+    <br>
+    <p id="t1" style="font-size: 20px;" >早年经历</p>
+   <br>
+   <img  style=" width: 300px; height: 200px; float: right; clear: left; " src="image/车.jpg " alt="">
+    <p style="text-indent: 20px; ">1992年至1994年，阿信、怪兽、玛莎、石头先后结识于台湾师范大学附属中学，加入师大附中的吉他社，开启了音乐旅程。</p>
+    <p style="text-indent: 20px; width: 1000px;">1995年，还在读高中的吉他手怪兽、主唱阿信，以及第一任的鼓手钱佑达组成名为“So Band”的乐团，之后贝斯手玛莎加入。四人自高中毕业后，分别进入不同的大学就读，但乐团并未停止活动，持续在许多酒吧、餐厅驻唱表演。</p>
+    <p style="text-indent: 20px; width: 1000px;">1997年，野台开唱活动前，加入了吉他手石头，为了报名参加野台开唱，五人使用玛莎在网络BBS的代号“MAYDAY”作为团名，正式更名为“五月天”。3月29日五月天野台开唱，正式组成乐队。</p>
+    <p style="text-indent: 20px;">1998年1月，发行第一张乐团合辑</p><p class="bluefont"> 《ㄞ国歌曲》</p>
+    <p style="text-indent: 20px;">1999年，第四任鼓手冠佑加入乐团，主唱阿信把成军时间改为冠佑加入后。</p>
+     <hr>
+    <p id="t2" style="font-size: 20px;"> 演艺经历</p>
+    <br>
+    <img  style="width: 300px; height: 200px; float: right;" src="image/合照2.jpg" alt="">
+    <p style="text-indent: 20px;">1998年6月，五月天加入滚石唱片。1999年7月7日，发行加入滚石之后的第一张专辑</p><p class="bluefont"> 《第一张创作专辑》</p><p>（又名<p class="bluefont">《疯狂世界》</p>）<p> [1]  [6]  ，专辑收录了</p><p class="bluefont">《疯狂世界》《爱情的模样》</p><p>等六首普通话歌曲、</p><p class="bluefont">《志明与春娇》《轧车》</p><p>等六首闽南语歌曲 [7]  ；同年8月28日，在台北市立体育场举行演唱会 [8]  。</p>
+    <p >2000年7月7日，发行了第二张创作专辑</p><p class="bluefont">《爱情万岁》</p><p> [9]  ，专辑收录了</p><p class="bluefont">《终结孤单》《温柔》</p>等12首歌曲 [10]  ；同年8月，举办“十万青年站出来”巡回演唱会 [11]  。</p>
+     <p>2001年5月16日，发行音乐作品</p><p class="bluefont">《候鸟》</p><p>电影原声带，并且于日本发行日版精选集</p><p class="bluefont">《Call Me NO.1》</p><p>；同年7月6日，发行第3张创作专辑</p><p class="bluefont">《人生海海》</p><p>,该专辑是五月天暂别乐坛的专辑；同年，举办“你要去哪里”暂别演唱会 [12]  ；同年10月，怪兽、玛莎和阿信准备入伍，于是在入伍之前发行了专辑</p><p class="bluefont">《五月天素人自拍》。</p>
+    <hr>
+    <p id="t3" style="font-size: 20px;">主要作品</p>
+    <br>
+    <!-- <embed src="http://music.163.com/song/media/outer/url?id=385965.mp3"  play="false"   type="" width="100px" height="60px" 
+    style="border-radius: 50%;"> -->
+    <p class="bluefont" style="font-size: 18px;">1.知足</p>
+    <audio src="http://music.163.com/song/media/outer/url?id=385965.mp3"  controls></audio>
+    <p class="bluefont" style="font-size: 18px;">2.温柔</p>
+    <audio src="http://music.163.com/song/media/outer/url?id=386538.mp3"  controls></audio>
+    <p class="bluefont" style="font-size: 18px;">3.倔强</p>
+    <audio src="http://music.163.com/song/media/outer/url?id=386175.mp3"  controls></audio>
+    <br>
+    <p class="bluefont" style="font-size: 18px;">4.志明与春娇</p>
+    <audio src="http://music.163.com/song/media/outer/url?id=386936.mp3"  controls></audio>
+    </div>
+    
+
+
+
+
+
+<script>
+    // 展开栏
+    var spans=document.getElementsByClassName("sp");
+    var ull=document.getElementsByClassName("u1");
+    var divv=document.getElementById("selectvalu");
+    for(let i=0;i<spans.length;i++)
+   { spans[i].onmouseover=function(){
+        divv.style.display="block";
+        spans[i].style.backgroundColor="rgb(51,140,230)";
+        ull[i].style.backgroundColor="rgb(25,80,139)";
+       
+         
+       
+    };
+    for(let j=0;j<spans.length;j++)
+    {
+        spans[j].onmouseout=function(){
+        divv.style.display="none";
+        spans[j].style.backgroundColor="rgb(69,157,245)";
+        ull[j].style.backgroundColor="rgb(46,104,162)";
+         
+       
+    };}
+  //义项展开
+  var ic=document.getElementById("icon");
+  var zhan=document.getElementById("zhankai");
+  var men=document.getElementById("menu");
+  var men1=document.getElementsByClassName("menu1");
+
+  zhan.onclick=function()
+  {  if(zhan.value=="展开")
+  for( let i=0;i<men1.length;i++)
+      {zhan.value="收起";
+      men.style.display="inline-block";
+      men1[i].style.display="inline-block";
+          }
+      else
+      for( let i=0;i<men1.length;i++)
+      { zhan.value="展开";
+      men.style.display="none";
+      men1[i].style.display="none";}
+
+  };
+  
+//   视频框
+var spanss=document.getElementsByClassName("select");
+        var uls=document.getElementsByClassName("selectu");
+        let index=0;
+        for(let k=0;k<spanss.length;k++)
+        {spanss[k].onclick=function(){
+            spanss[index].id="";
+            uls[index].id="";
+            index=k;
+            spanss[index].id="selectedSpan";
+            uls[index].id="selectedList";}
+            }
+
+}
+
+</script>
+</body>
+</html>
